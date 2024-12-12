@@ -1,6 +1,7 @@
 cask_args appdir: "/Applications"
 
 brew "go"
+brew "coreutils"
 
 cask "google-chrome"
 cask "google-japanese-ime"

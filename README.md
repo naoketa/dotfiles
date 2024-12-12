@@ -1,5 +1,5 @@
 # dotfiles
 
 ```
-
+brew bundle --global
 ```
