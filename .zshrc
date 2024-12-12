@@ -1,6 +1,7 @@
 # environment variables
 export LANG=ja_JP.UTF-8
 export KCODE=u #UTF-8
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # color
 autoload -Uz colors
@@ -41,17 +42,6 @@ RPROMPT='[%F{green}%d%f]'
 # core
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# dev
-export PATH=$PATH:~/SDK/flutter/bin
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
-export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/.cargo
-
 ## alias
 # core
 alias ls='gls --color=auto'
@@ -68,13 +58,3 @@ alias gp='git push'
 alias gcm='commit -m'
 alias gsh='git stash'
 alias gri='git rebase -i'
-
-# docker
-alias dcb='docker-compose build'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
-alias dcs='docker-compose stop'
-alias dcr='docker-compose restart'
-alias dcl='docker-compose logs -f'
-alias dp='docker ps'
-alias dx='docker exec -it'
